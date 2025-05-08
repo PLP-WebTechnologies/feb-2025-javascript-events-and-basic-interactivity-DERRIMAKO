@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Photo Gallery By The_Derrico</h1>
+        <p>Click on the thumbnails to view the images in full size</p>
+    </header>
+
+    <section class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/6283154/pexels-photo-6283154.jpeg" alt="Woman near waterfall" class="thumbnail">
+            <div class="overlay">
+                <p class="caption">Young ethnic woman near waterfall</p>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/7348621/pexels-photo-7348621.jpeg" alt="Man walking on river rocks" class="thumbnail">
+            <div class="overlay">
+                <p class="caption">Man walking on river with rocks</p>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/7348927/pexels-photo-7348927.jpeg" alt="Boy in jacket on green field" class="thumbnail">
+            <div class="overlay">
+                <p class="caption">Boy standing on green field</p>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/17664155/pexels-photo-17664155.jpeg" alt="Woman walking down trail" class="thumbnail">
+            <div class="overlay">
+                <p class="caption">Woman walking on trail in woods</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form-section">
+        <h2>Join the Adventure</h2>
+        <form id="adventureForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Your Name">
+            <small class="error" id="nameError"></small>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="you@example.com">
+            <small class="error" id="emailError"></small>
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Minimum 8 characters">
+            <small class="error" id="passwordError"></small>
+    
+            <button type="submit">Enter into Adventure</button>
+        </form>
+    </section>
+    
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Adventure Vision Gallery by the_Derrico. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
